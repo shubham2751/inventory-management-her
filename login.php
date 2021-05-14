@@ -37,7 +37,7 @@
         // for that the users_info table will be deleted!!!
         $res= $conn->query($sql);
 
-        if(mysqli_num_rows($res)==1){
+        if(mysqli_num_rows($res)==1){   
             $user= mysqli_fetch_assoc($res);
             $id= $user['id'];
             $sq= "UPDATE users_info SET last_login_time=current_timestamp() WHERE id='$id'";

@@ -8,9 +8,9 @@
         // $dbname="inventory_project";
 
         $dbHost = "remotemysql.com";
-        $user= "u96YGvXCdt";
-        $pass= "8lPpENpF7I";
-        $dbname="u96YGvXCdt";
+        $user= "HGxxzEUaw3";
+        $pass= "zHH7UDqrQU";
+        $dbname="HGxxzEUaw3";
         
 
         $conn= new mysqli($dbHost, $user, $pass, $dbname);
