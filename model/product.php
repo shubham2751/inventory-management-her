@@ -19,7 +19,7 @@
         $allowedFormats= ['jpg', 'png', 'jpeg', 'gif'];
 
         if(in_array($actualFormat, $allowedFormats)){
-            $location= 'Uploads/'.$actualName.'.'.$actualFormat;
+            $location= 'uploads/'.$actualName.'.'.$actualFormat;
             $sql= "INSERT INTO products(name, bought, image, created_at) VALUES ('$pName', '$buy', '$location', current_timestamp())";
             if($conn->query($sql)===true){
                 move_uploaded_file($tempName, $location);
